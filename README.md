@@ -1,11 +1,11 @@
-# 🚦 Urban Traffic Management Platform
+#  Urban Traffic Management Platform
 
 > **Mini Projet – Web Services & GraphQL**  
 > Plateforme intelligente de gestion du trafic urbain basée sur une architecture microservices avec API Gateway GraphQL.
 
 ---
 
-## 📋 Table des matières
+## Table des matières
 
 - [Vue d'ensemble](#vue-densemble)
 - [Architecture](#architecture)
@@ -62,7 +62,7 @@ Elle est composée de **5 microservices indépendants** exposés via une **API G
 
 ## Services
 
-### 1. 🔐 Service Authentification — `auth-service` (port `3001`)
+### 1.  Service Authentification — `auth-service` (port `3001`)
 
 Gère les identités et les accès à la plateforme.
 
@@ -86,7 +86,7 @@ mutation Login($input: LoginInput!) {
 
 ---
 
-### 2. 🚗 Service Gestion des Véhicules — `vehicle-service` (port `3002`)
+### 2.  Service Gestion des Véhicules — `vehicle-service` (port `3002`)
 
 Supervision et suivi GPS des véhicules.
 
@@ -113,7 +113,7 @@ mutation RecordGPS($vehicleId: ID!, $lat: Float!, $lng: Float!) {
 
 ---
 
-### 3. 🗺️ Service Gestion du Trafic — `traffic-service` (port `3003`)
+### 3.  Service Gestion du Trafic — `traffic-service` (port `3003`)
 
 Analyse et classification des zones de circulation.
 
@@ -137,7 +137,7 @@ mutation UpdateDensity($zoneId: ID!, $density: Float!) {
 
 ---
 
-### 4. ⚠️ Service Gestion des Incidents — `incident-service` (port `3004`)
+### 4.  Service Gestion des Incidents — `incident-service` (port `3004`)
 
 Déclaration et suivi des incidents de circulation.
 
@@ -163,7 +163,7 @@ mutation UpdateIncidentStatus($id: ID!, $status: IncidentStatus!) {
 
 ---
 
-### 5. 🔔 Service Notifications — `notification-service` (port `3005`)
+### 5.  Service Notifications — `notification-service` (port `3005`)
 
 Gestion des alertes et notifications utilisateur.
 
@@ -620,11 +620,3 @@ query { notifications(userId: "uuid-here") { id message isRead createdAt } }
 | *(Membre 4)* | Notifications + Frontend |
 
 ---
-
-## Licence
-
-Ce projet est réalisé dans le cadre du module **Web Services** — Usage académique uniquement.
-
----
-
-> ⚠️ **Note :** Tout plagiat ou copie entre groupes entraînera une sanction académique. Ce projet doit être réalisé avec sérieux, rigueur et esprit d'ingénierie.
